@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../images/CCLogo.png'
 import '../styles/Header.css';
-import '../styles/font.css'
+import '../styles/font.css';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     return (
@@ -10,7 +11,15 @@ const Header = () => {
                 <img src={logo} alt="Coach Connect Logo" />
             </div>
             <div className="nav-links">
-                <a href="/about">About</a>
+                <Link
+                    to="about-section" // This should match the id of your About section
+                    spy={true}
+                    smooth={true}
+                    offset={100} // Adjust the offset as needed
+                    duration={500} // Duration of the scroll animation
+                >
+                    About
+                </Link>
                 <a href="/about">FAQs</a>
                 <a href="/signup">Sign Up</a>
                 <a href="/login">Login</a>

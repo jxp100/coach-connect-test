@@ -14,7 +14,7 @@ const ScrollToSection = ({ text, targetPage }) => {
     const scrollToPage = () => {
         const element = document.getElementById(targetPage);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView({ behavior: 'smooth', inline: 'nearest', offsetTop: 50 });
         }
     };
 
