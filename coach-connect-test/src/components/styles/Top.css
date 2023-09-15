@@ -1,0 +1,69 @@
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3BBED1;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'agrandir wide light', sans-serif;
+    font-size: 54px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.find-coach-button{
+    font-family: 'agrandir wide light', sans-serif;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #007785;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.i-am-coach-button {
+    padding: 15px 35px;
+        font-size: 16px;
+        font-family: 'agrandir wide light', sans-serif;
+        font-weight: bolder;
+        background-color: #fff;
+        color: #007785;
+        border: none;
+        border-radius: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+}
+
+.find-coach-button:hover{
+    background-color: #fff;
+    color: #007785;
+}
+
+.i-am-coach-button:hover {
+    background-color: #007785;
+    color: #fff;
+}
+
+.image img {
+        height: 400px;
+}
