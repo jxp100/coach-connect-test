@@ -8,28 +8,17 @@ import About from './components/views/about';
 import { useState } from 'react';
 
 function App() {
-  const [activeButton, setActiveButton] = useState('Find a Coach');
-
-  const handleFindCoachClick = () => {
-    setActiveButton('Find a Coach');
-  };
-
-  const handleIAmCoachClick = () => {
-    setActiveButton('I am a Coach');
-  };
-
 
 
   return (
     <div >
       <Header />
-      <TopSection id='top-section' activeButton={activeButton} 
-        onFindCoachClick={handleFindCoachClick} 
-        onIAmCoachClick={handleIAmCoachClick}  />
-      <ScrollToSection text={'Find Out More'} targetPage={"about-section"} />
+      <TopSection id='top-section' />
 
       <div id='about-section'>
-        <About activeButton = {activeButton} />
+        <About />
+        <ScrollToSection text={'Find Out More'} targetPage={"about-section"} offset={-90} />
+
       </div>
 
 

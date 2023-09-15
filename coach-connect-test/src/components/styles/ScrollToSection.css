@@ -28,26 +28,20 @@
 .down-image img {
     height: 20px;
     padding: 10px;
-    fill: #3BBED1;
 
             transform: translateX(-50%);
-            /* Center the image horizontally */
             animation: bounce 2s infinite;
-            /* Apply the 'bounce' animation */
         }
     
-        /* Define the 'bounce' animation */
         @keyframes bounce {
     
             0%,
             100% {
                 transform: translateY(0);
-                /* Initial and final position (no vertical movement) */
             }
     
             50% {
                 transform: translateY(-2px);
-                /* Bounce up */
             
         }
 }

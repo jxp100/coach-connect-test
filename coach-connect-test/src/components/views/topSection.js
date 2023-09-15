@@ -5,7 +5,7 @@ import { useState } from 'react';
 import About from './about';
 
 
-const TopSection = ({ activeButton, onFindCoachClick, onIAmCoachClick }) => {
+const TopSection = () => {
 
     return (
         <div className="top-section">
@@ -13,18 +13,13 @@ const TopSection = ({ activeButton, onFindCoachClick, onIAmCoachClick }) => {
                 <h1>Connecting Employees to Development Coaches</h1>
                 <div className="buttons">
                     <button
-                        onClick={() => {
-                            onFindCoachClick();
-                        }}
-                        className={`find-coach-button ${activeButton === 'Find a Coach' ? 'active' : ''}`}
+                        className="find-coach-button"
                     >
                         Find a Coach
                     </button>
                     <button
-                        onClick={() => {
-                            onIAmCoachClick();
-                        }}
-                        className={`i-am-coach-button ${activeButton === 'I am a Coach' ? 'active' : ''}`}
+                     
+                        className="i-am-coach-button"
                     >
                         I am a Coach
                     </button>
