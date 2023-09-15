@@ -1,0 +1,72 @@
+/* About.css */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+p{
+    font-family: 'agrandir wide light', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'agrandir wide light', sans-serif;
+    font-size: 18px;
+    color: #007785;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust as needed to control spacing */
+}
+
+
+.card {
+    flex: 1;
+    background-color: #007785;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    font-family: 'agrandir wide light', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    font-family: 'agrandir wide light', sans-serif;
+    font-size: 54px;
+    color: #007785;
+}
+
+h3 {
+    text-align: center;
+    width: 100%;
+    font-family: 'agrandir wide light', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}

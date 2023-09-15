@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './images/CCLogo.png'
-import './styles/Header.css';
-import './styles/font.css'
+import logo from '../images/CCLogo.png'
+import '../styles/Header.css';
+import '../styles/font.css'
 
 const Header = () => {
     return (
@@ -11,6 +11,7 @@ const Header = () => {
             </div>
             <div className="nav-links">
                 <a href="/about">About</a>
+                <a href="/about">FAQs</a>
                 <a href="/signup">Sign Up</a>
                 <a href="/login">Login</a>
             </div>
