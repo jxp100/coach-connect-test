@@ -19,11 +19,6 @@ const About = () => {
         <div className="about-container" id="about-section">
             <div>
                 <h2>How It Works</h2>
-                <h4>
-                    Coach Connect helps to ease the process of matching Employees to
-                    Development Coaches based on their goals and requirements to help you
-                    invest in your employees so they can reach their highest potential.
-                </h4>
 
                 <div className="buttons">
                     <button
@@ -76,8 +71,7 @@ const About = () => {
 
                     {activeButton === 'I am a Coach' && (
                         <>
-                            {/* Add your "I am a Coach" content here */}
-                            <div className="card">
+                            <div className="card-coach">
                                 <p>1. Create Your Profile</p>
                                 <img src={createProfile} alt="create-profile" />
                                 <h3>
@@ -85,7 +79,7 @@ const About = () => {
                                     employee
                                 </h3>
                             </div>
-                            <div className="card">
+                            <div className="card-coach">
                                 <p>2. Set your Preferences</p>
                                 <img src={preferences} alt="preferences" />
                                 <h3>
@@ -94,7 +88,7 @@ const About = () => {
                                     appropriate employee to coach
                                 </h3>
                             </div>
-                            <div className="card">
+                            <div className="card-coach">
                                 <p>3. Get Connected!</p>
                                 <img src={handshake} alt="get-connected" />
                                 <h3>

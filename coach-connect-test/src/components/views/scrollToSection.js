@@ -11,8 +11,7 @@ const ScrollToSection = ({ text, targetPage, offset }) => {
         const element = document.getElementById(targetPage);
         if (element) {
             // Calculate the offset based on your needs
-            const offset = offset; // Adjust this value as needed
-            const targetTop = element.getBoundingClientRect().top + window.scrollY - offset;
+            const targetTop = element.getBoundingClientRect().top + window.scrollY - offset ;
 
             // Scroll to the targetTop
             window.scrollTo({ top: targetTop, behavior: 'smooth' });
