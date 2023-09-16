@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/SignUp.css';
 import signUpEmployee from '../images/sign-up1.png'
+import Header from './header';
 
 const SignUp = () => {
     return (
+        <div>
+        <Header />
         <div className="sign-up-container">
             <div className="left-section">
-                {/* Logo and headings */}
-                <img src="your-logo.png" alt="Logo" />
-                <h1>Searching for a Coach?</h1>
+                <h2>Searching for a Coach?</h2>
                 <h2>Look no further with CoachConnect!</h2>
                 <img src= {signUpEmployee} alt="Sign Up Employee" className="bottom" />
             </div>
@@ -27,6 +28,7 @@ const SignUp = () => {
                     <button type="submit">Sign Up</button>
                 </form>
                 {/* <p>Already on CoachConnect? <a href="#">Log In</a></p> */}
+            </div>
             </div>
         </div>
     );

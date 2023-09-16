@@ -5,6 +5,7 @@
     align-items: center;
     height: 100vh;
     padding: 20px;
+    background-color: #3BBED1;
 }
 
 .left-section {
@@ -72,4 +73,8 @@ p {
 a {
     color: #007785;
     text-decoration: none;
+}
+
+.logo {
+    height: 100px;
 }

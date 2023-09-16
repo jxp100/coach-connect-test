@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 import Header from './header';
 import TopSection from './topSection';
 import ScrollToSection from './scrollToSection';
 import About from './about';
 import Faqs from './faqs';
-import SignUp from './signUp';
 
 function Home() {
     const [currentTargetPage, setCurrentTargetPage] = useState('about-section');
