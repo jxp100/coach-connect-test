@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './components/views/header';
 import TopSection from './components/views/topSection';
 import ScrollToSection from './components/views/scrollToSection';
@@ -74,13 +74,18 @@ function App() {
           <div id='about-section'>
             <About />
           </div>
-          <div id='faq-section'>
-            <Faqs faqData={faqData} />
+        <div id='faq-section'>
+          <Faqs faqData={faqData} />
+          <div className="center-button">
+            <button className="get-started">
+              <Link to="/signup">Get Started!</Link>
+            </button>
+          </div>
           </div>
 
 
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faqs faqData={faqData} />} />
           <Route path="/signup" element={<SignUpPage />} /> {/* Sign-up page route */}
         </Routes>

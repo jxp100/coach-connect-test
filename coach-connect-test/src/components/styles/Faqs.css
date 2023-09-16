@@ -6,9 +6,10 @@
   color: white;
   margin-top: -40px;
   /* padding-top: 20px; */
-  padding-bottom: 150px;
+  padding-bottom: 30px;
   text-align: center;
 }
+
 
 h2 {
   margin-bottom: 30px;
@@ -63,42 +64,9 @@ h2 {
 
 }
 
-.get-started{
-    font-size: 20px;
-        padding: 10px 20px;
-        margin-top: 40px;
-        border-radius: 18px;
-        font-size: 30px;
-        font-family: 'agrandir wide light', sans-serif;
-        font-weight: bolder;
-        background-color: #fff;
-        color: #007785;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-
-            transform: translateX(-50%);
-                animation: bounce 1.5s infinite;
-            }
-            
-            @keyframes bounce {
-            
-                0%,
-                100% {
-                    transform: translateY(0);
-                }
-            
-                50% {
-                    transform: translateY(-4px);
-            
-                }
-}
 
 .rotate-up {
     transform: rotate(180deg);
 }
 
-.get-started:hover {
-    background-color: #fff;
-    color: #007785;
-}
+
