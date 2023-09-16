@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/CCLogo.png'
 import '../styles/Header.css';
 import '../styles/font.css';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
                 </RouterLink>
             </div>
             <div className="nav-links">
-                <Link
+                <ScrollLink
                     to="about-section" // This should match the id of your About section
                     spy={true}
                     smooth={true}
@@ -22,8 +22,8 @@ const Header = () => {
                     duration={500} // Duration of the scroll animation
                 >
                     About
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                     to="faq-section" // This should match the id of your About section
                     spy={true}
                     smooth={true}
@@ -31,7 +31,7 @@ const Header = () => {
                     duration={500} // Duration of the scroll animation
                 >
                     FAQs
-                </Link>
+                </ScrollLink>
                 <a href="/signup">Sign Up</a>
                 <a href="/login">Login</a>
             </div>

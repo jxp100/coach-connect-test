@@ -62,7 +62,6 @@ function Home() {
             question: "What Development Areas are available?",
             answer: "Areas available include..."
         },
-        // Add more FAQ items as needed
     ];
 
     return (
