@@ -4,6 +4,8 @@ import Home from './components/views/home';
 import About from './components/views/about';
 import Faqs from './components/views/faqs';
 import SignUp from './components/views/signUp';
+import Login from './components/views/login';
+
 
 function App() {
 
@@ -17,7 +19,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/signup" element={<SignUp />} />
-          {/* Add more routes as needed */}
+          <Route path="/login" element={<Login />} />
+
         </Routes>
       </div>
     </Router>

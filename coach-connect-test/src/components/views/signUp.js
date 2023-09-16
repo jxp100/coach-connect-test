@@ -23,9 +23,9 @@ const SignUp = () => {
                         <h7>Searching for a Coach?</h7>) : (<h7>Looking for a Coachee?</h7>)} 
                 <h8>Look no further with CoachConnect!</h8>
                     {userType === 'find-a-coach' ? (
-                        <img src={signUpEmployee} alt="Find a Coach Image" className="bottom" />
+                        <img src={signUpEmployee} alt="Find a Coach" className="bottom" />
                     ) : (
-                        <img src={signUpCoach} alt="I am a Coach Image" className="bottom" />
+                        <img src={signUpCoach} alt="I am a Coach" className="bottom" />
                     )}
             </div>
                 <div className="right-section">
