@@ -1,23 +1,38 @@
 import React from 'react';
 import '../styles/SignUp.css';
-import signUpEmployee from '../images/sign-up1.png'
+import signUpEmployee from '../images/sign-up1.png';
+import signUpCoach from '../images/sign-up2.png'
+
 import Header from './header';
+import { useState } from 'react';
+
 
 const SignUp = () => {
+    const [userType, setUserType] = useState('find-a-coach');
+
+    const handleUserType = (type) => {
+        setUserType(type);
+    };
+
     return (
         <div>
         <Header />
         <div className="sign-up-container">
-            <div className="left-section">
-                <h7>Searching for a Coach?</h7>
+                <div className="left-section">
+                    {userType === 'find-a-coach' ? (
+                        <h7>Searching for a Coach?</h7>) : (<h7>Looking for a Coachee?</h7>)} 
                 <h8>Look no further with CoachConnect!</h8>
-                <img src= {signUpEmployee} alt="Sign Up Employee" className="bottom" />
+                    {userType === 'find-a-coach' ? (
+                        <img src={signUpEmployee} alt="Find a Coach Image" className="bottom" />
+                    ) : (
+                        <img src={signUpCoach} alt="I am a Coach Image" className="bottom" />
+                    )}
             </div>
                 <div className="right-section">
                     <h9>Please Select:</h9>
                 <div className="buttons">
-                    <button>Find a Coach</button>
-                    <button>I am a Coach</button>
+                        <button onClick={() => handleUserType('find-a-coach')}>Find a Coach</button>
+                        <button onClick={() => handleUserType('i-am-a-coach')}>I am a Coach</button>
                 </div>
                 <h2>Sign Up</h2>
                 <form className='form'>
