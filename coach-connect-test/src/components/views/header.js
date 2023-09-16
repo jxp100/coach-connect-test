@@ -3,12 +3,15 @@ import logo from '../images/CCLogo.png'
 import '../styles/Header.css';
 import '../styles/font.css';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className="header">
             <div className="logo">
-                <img src={logo} alt="Coach Connect Logo" />
+                <RouterLink to= "/">
+                    <img src={logo} alt="Coach Connect Logo" />
+                </RouterLink>
             </div>
             <div className="nav-links">
                 <Link

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from './header';
 import TopSection from './topSection';
 import ScrollToSection from './scrollToSection';
