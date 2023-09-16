@@ -4,36 +4,52 @@ import '../styles/Header.css';
 import '../styles/font.css';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 
 const Header = () => {
+    const location = useLocation();
+
     return (
         <div className="header">
             <div className="logo">
-                <RouterLink to= "/">
+                <RouterLink to="/">
                     <img src={logo} alt="Coach Connect Logo" />
                 </RouterLink>
             </div>
             <div className="nav-links">
-                <ScrollLink
-                    to="about-section" // This should match the id of your About section
-                    spy={true}
-                    smooth={true}
-                    offset={20} // Adjust the offset as needed
-                    duration={500} // Duration of the scroll animation
-                >
-                    About
-                </ScrollLink>
-                <ScrollLink
-                    to="faq-section" // This should match the id of your About section
-                    spy={true}
-                    smooth={true}
-                    offset={-10} // Adjust the offset as needed
-                    duration={500} // Duration of the scroll animation
-                >
-                    FAQs
-                </ScrollLink>
-                <a href="/signup">Sign Up</a>
-                <a href="/login">Login</a>
+                {location.pathname === '/' ? ( // Check if the user is on the home page
+                    <>
+                        <ScrollLink
+                            to="about-section"
+                            spy={true}
+                            smooth={true}
+                            offset={20}
+                            duration={500}
+                        >
+                            About
+                        </ScrollLink>
+                        <ScrollLink
+                            to="faq-section"
+                            spy={true}
+                            smooth={true}
+                            offset={-10}
+                            duration={500}
+                        >
+                            FAQs
+                        </ScrollLink>
+                        <RouterLink to="/signup">Sign Up</RouterLink>
+                        <RouterLink to="/login">Login</RouterLink>
+                    </>
+                ) : (<>
+
+                        <RouterLink to="/">About</RouterLink>
+                        <RouterLink to="/">FAQs</RouterLink>
+
+                    <RouterLink to="/signup">Sign Up</RouterLink>
+                    <RouterLink to="/login">Login</RouterLink>
+                </>
+                )}
             </div>
         </div>
     );

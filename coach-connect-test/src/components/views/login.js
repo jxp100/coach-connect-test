@@ -24,7 +24,7 @@ const Login = () => {
                     <form className='form'>
                         <input type="email" placeholder="Email Address" />
                         <input type="password" placeholder="Password" />
-                        <button type="submit">Sign Up</button>
+                        <button className="submit" type="submit">Sign In</button>
                     </form>
                     <p>New to CoachConnect? <a href="/signup">Sign Up</a></p>
                 </div>

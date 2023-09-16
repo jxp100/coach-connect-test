@@ -69,7 +69,7 @@ function Home() {
             <div>
                 <Header />
                 <TopSection id='top-section' />
-                <div id='about-section'>
+            <div id='about-section'>
                     <About />
                 </div>
                 <div id='faq-section'>

@@ -4,6 +4,8 @@ import createProfile from '../images/create-profile.png';
 import preferences from '../images/preferences.png';
 import handshake from '../images/handshake.png';
 
+
+
 const About = () => {
     const [activeButton, setActiveButton] = useState('I am an Employee');
 

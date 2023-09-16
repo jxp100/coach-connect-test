@@ -125,3 +125,8 @@ h12 {
     color: #fff;
     padding-bottom: 20px;
 }
+
+.submit:hover {
+    color: #007785;
+    background-color: #fff;
+}

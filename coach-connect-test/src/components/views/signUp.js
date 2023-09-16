@@ -40,7 +40,7 @@ const SignUp = () => {
                     <input type="email" placeholder="Email Address" />
                     <input type="password" placeholder="Password" />
                     <input type="password" placeholder="Confirm Password" />
-                    <button type="submit">Sign Up</button>
+                    <button className="submit" type="submit">Sign Up</button>
                 </form>
                 <p>Already on CoachConnect? <a href="/login">Log In</a></p>
             </div>
