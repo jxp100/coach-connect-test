@@ -9,25 +9,25 @@ const SignUp = () => {
         <Header />
         <div className="sign-up-container">
             <div className="left-section">
-                <h2>Searching for a Coach?</h2>
-                <h2>Look no further with CoachConnect!</h2>
+                <h7>Searching for a Coach?</h7>
+                <h8>Look no further with CoachConnect!</h8>
                 <img src= {signUpEmployee} alt="Sign Up Employee" className="bottom" />
             </div>
-            <div className="right-section">
-                {/* Buttons, sign-up form, and text */}
+                <div className="right-section">
+                    <h9>Please Select:</h9>
                 <div className="buttons">
                     <button>Find a Coach</button>
                     <button>I am a Coach</button>
                 </div>
                 <h2>Sign Up</h2>
-                <form>
+                <form className='form'>
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email Address" />
                     <input type="password" placeholder="Password" />
                     <input type="password" placeholder="Confirm Password" />
                     <button type="submit">Sign Up</button>
                 </form>
-                {/* <p>Already on CoachConnect? <a href="#">Log In</a></p> */}
+                <p>Already on CoachConnect? <a href="/login">Log In</a></p>
             </div>
             </div>
         </div>
