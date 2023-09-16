@@ -4,14 +4,16 @@ import '../styles/font.css';
 import chevronBlue from '../images/down-chevron-blue.svg';
 import chevronWhite from '../images/down-chevron-white.svg';
 
-const ScrollToSection = ({ text, targetPage, offset }) => {
+const ScrollToSection = ({ text, targetPage, updateTargetPage }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const scrollToPage = () => {
+        updateTargetPage(targetPage);
+
         const element = document.getElementById(targetPage);
         if (element) {
             // Calculate the offset based on your needs
-            const targetTop = element.getBoundingClientRect().top + window.scrollY - offset ;
+            const targetTop = element.getBoundingClientRect().top + window.scrollY ;
 
             // Scroll to the targetTop
             window.scrollTo({ top: targetTop, behavior: 'smooth' });

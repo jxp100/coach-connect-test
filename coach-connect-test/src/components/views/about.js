@@ -63,7 +63,7 @@ const About = () => {
                                 <img src={handshake} alt="get-connected" />
                                 <h3>
                                     Our matching algorithm will provide you with a list of the
-                                    most compatible coaches for you to get in touch with
+                                    most compatible coaches for you to get in touch with!
                                 </h3>
                             </div>
                         </>
@@ -75,7 +75,7 @@ const About = () => {
                                 <p>1. Create Your Profile</p>
                                 <img src={createProfile} alt="create-profile" />
                                 <h3>
-                                    Sign Up to join the network of coaches looking to coach an
+                                    Sign Up to join the network of coaches looking to match to an
                                     employee
                                 </h3>
                             </div>
@@ -93,7 +93,7 @@ const About = () => {
                                 <img src={handshake} alt="get-connected" />
                                 <h3>
                                     Our matching algorithm will provide you with a list of the
-                                    most compatible employees for you to get in touch with
+                                    most compatible employees for you to get in touch with!
                                 </h3>
                             </div>
                         </>
