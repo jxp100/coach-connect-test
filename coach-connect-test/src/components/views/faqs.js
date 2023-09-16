@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Faqs.css';
 import downChevron from '../images/down-chevron-white.svg';
 import upChevron from '../images/up-chevron-white.svg';
-
+import { Link } from 'react-router-dom';
 
 
 const Faqs = ({ faqData }) => {
@@ -59,13 +59,8 @@ const Faqs = ({ faqData }) => {
                     </div>
                 ))}
             </div>
-            <button
-                onClick={() => {
-                    handleOnClick();
-                }}
-                className="get-started"
-            >
-                Get Started!
+            <button className="get-started">
+                <Link to="/signup">Get Started!</Link>
             </button>
         </div>
     );

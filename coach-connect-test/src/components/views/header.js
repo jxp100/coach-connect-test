@@ -15,7 +15,7 @@ const Header = () => {
                     to="about-section" // This should match the id of your About section
                     spy={true}
                     smooth={true}
-                    offset={40} // Adjust the offset as needed
+                    offset={20} // Adjust the offset as needed
                     duration={500} // Duration of the scroll animation
                 >
                     About
@@ -24,7 +24,7 @@ const Header = () => {
                     to="faq-section" // This should match the id of your About section
                     spy={true}
                     smooth={true}
-                    offset={10} // Adjust the offset as needed
+                    offset={-10} // Adjust the offset as needed
                     duration={500} // Duration of the scroll animation
                 >
                     FAQs

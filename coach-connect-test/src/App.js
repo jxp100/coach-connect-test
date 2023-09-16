@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/views/header';
 import TopSection from './components/views/topSection';
 import ScrollToSection from './components/views/scrollToSection';
 import About from './components/views/about';
 import Faqs from './components/views/faqs';
+import SignUpPage from './components/routes/SignUpPage';
 
 function App() {
   const [currentTargetPage, setCurrentTargetPage] = useState('about-section');
   const [hasScrolledToFaqs, setHasScrolledToFaqs] = useState(false);
+
 
     const updateTargetPage = () => {
       // Determine the next target page based on the current target page
@@ -22,7 +25,7 @@ function App() {
     const handleScroll = () => {
       const faqSection = document.getElementById('faq-section');
       if (faqSection) {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
         const faqSectionTop = faqSection.getBoundingClientRect().top + scrollTop;
 
         // Determine the scroll threshold when you want to hide the ScrollToSection
@@ -64,25 +67,32 @@ function App() {
   ];
 
   return (
-    <div>
-      <Header />
-      <TopSection id='top-section' />
+    <Router>
+      <div>
+        <Header />
+        <TopSection id='top-section' />
+          <div id='about-section'>
+            <About />
+          </div>
+          <div id='faq-section'>
+            <Faqs faqData={faqData} />
+          </div>
 
-      <div id='about-section'>
-        <About />
+
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/faqs" element={<Faqs faqData={faqData} />} />
+          <Route path="/signup" element={<SignUpPage />} /> {/* Sign-up page route */}
+        </Routes>
+
+        <ScrollToSection
+          text={'Find Out More'}
+          targetPage={currentTargetPage}
+          updateTargetPage={updateTargetPage}
+          hideScroll={hasScrolledToFaqs}
+        />
       </div>
-
-      <div id='faq-section'>
-        <Faqs faqData={faqData} />
-      </div>
-
-      <ScrollToSection
-        text={'Find Out More'}
-        targetPage={currentTargetPage}
-        updateTargetPage={updateTargetPage}
-        hideScroll={hasScrolledToFaqs} // Hide the ScrollToSection when scrolled to FAQ
-      />
-    </div>
+    </Router>
   );
 }
 
