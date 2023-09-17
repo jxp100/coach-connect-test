@@ -43,9 +43,7 @@ const Header = () => {
                     </>
                 ) : (<>
 
-                        <RouterLink to="/">About</RouterLink>
-                        <RouterLink to="/">FAQs</RouterLink>
-
+                    <RouterLink to="/">Home</RouterLink>
                     <RouterLink to="/signup">Sign Up</RouterLink>
                     <RouterLink to="/login">Login</RouterLink>
                 </>
