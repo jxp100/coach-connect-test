@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8a0b659.css",
-    "main.js": "/static/js/main.9bc77b65.js",
-    "static/js/787.aa89e278.chunk.js": "/static/js/787.aa89e278.chunk.js",
-    "static/media/log-in.png": "/static/media/log-in.f51423c2a02ce33d1768.png",
-    "static/media/sign-up2.png": "/static/media/sign-up2.1e0f6c7e59d869639b22.png",
-    "static/media/handshake.png": "/static/media/handshake.290212b40294f6e2dfcb.png",
-    "static/media/sign-up1.png": "/static/media/sign-up1.d85b6fc941f0715c41f5.png",
-    "static/media/TopImage.png": "/static/media/TopImage.faa65e077c38faf7f799.png",
-    "static/media/preferences.png": "/static/media/preferences.df0bcc7c7acae36edc94.png",
-    "static/media/create-profile.png": "/static/media/create-profile.24050be7ecf036979595.png",
-    "static/media/Agrandir-WideLight.otf": "/static/media/Agrandir-WideLight.efd6d44de261ac30a7dc.otf",
-    "static/media/CCLogo.png": "/static/media/CCLogo.1636e674a50df3178f96.png",
-    "static/media/up-chevron-white.svg": "/static/media/up-chevron-white.585a71eadd59e6b8f0cdaa973cf3f891.svg",
-    "static/media/down-chevron-blue.svg": "/static/media/down-chevron-blue.5383c2f0ece1e4c6ab350f81bfae13c1.svg",
-    "static/media/down-chevron-white.svg": "/static/media/down-chevron-white.98b577b5e3a25d5b1d6ac9f206c8bb87.svg",
-    "index.html": "/index.html",
-    "main.c8a0b659.css.map": "/static/css/main.c8a0b659.css.map",
-    "main.9bc77b65.js.map": "/static/js/main.9bc77b65.js.map",
-    "787.aa89e278.chunk.js.map": "/static/js/787.aa89e278.chunk.js.map"
+    "main.css": "/coach-connect-test/static/css/main.c42f78ee.css",
+    "main.js": "/coach-connect-test/static/js/main.08508ff1.js",
+    "static/js/787.aa89e278.chunk.js": "/coach-connect-test/static/js/787.aa89e278.chunk.js",
+    "static/media/log-in.png": "/coach-connect-test/static/media/log-in.f51423c2a02ce33d1768.png",
+    "static/media/sign-up2.png": "/coach-connect-test/static/media/sign-up2.1e0f6c7e59d869639b22.png",
+    "static/media/handshake.png": "/coach-connect-test/static/media/handshake.290212b40294f6e2dfcb.png",
+    "static/media/sign-up1.png": "/coach-connect-test/static/media/sign-up1.d85b6fc941f0715c41f5.png",
+    "static/media/TopImage.png": "/coach-connect-test/static/media/TopImage.faa65e077c38faf7f799.png",
+    "static/media/preferences.png": "/coach-connect-test/static/media/preferences.df0bcc7c7acae36edc94.png",
+    "static/media/create-profile.png": "/coach-connect-test/static/media/create-profile.24050be7ecf036979595.png",
+    "static/media/Agrandir-WideLight.otf": "/coach-connect-test/static/media/Agrandir-WideLight.efd6d44de261ac30a7dc.otf",
+    "static/media/CCLogo.png": "/coach-connect-test/static/media/CCLogo.1636e674a50df3178f96.png",
+    "static/media/up-chevron-white.svg": "/coach-connect-test/static/media/up-chevron-white.585a71eadd59e6b8f0cdaa973cf3f891.svg",
+    "static/media/down-chevron-blue.svg": "/coach-connect-test/static/media/down-chevron-blue.5383c2f0ece1e4c6ab350f81bfae13c1.svg",
+    "static/media/down-chevron-white.svg": "/coach-connect-test/static/media/down-chevron-white.98b577b5e3a25d5b1d6ac9f206c8bb87.svg",
+    "index.html": "/coach-connect-test/index.html",
+    "main.c42f78ee.css.map": "/coach-connect-test/static/css/main.c42f78ee.css.map",
+    "main.08508ff1.js.map": "/coach-connect-test/static/js/main.08508ff1.js.map",
+    "787.aa89e278.chunk.js.map": "/coach-connect-test/static/js/787.aa89e278.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8a0b659.css",
-    "static/js/main.9bc77b65.js"
+    "static/css/main.c42f78ee.css",
+    "static/js/main.08508ff1.js"
   ]
 }
