@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/coach-connect-test/static/css/main.c42f78ee.css",
-    "main.js": "/coach-connect-test/static/js/main.08508ff1.js",
+    "main.js": "/coach-connect-test/static/js/main.59614b18.js",
     "static/js/787.aa89e278.chunk.js": "/coach-connect-test/static/js/787.aa89e278.chunk.js",
     "static/media/log-in.png": "/coach-connect-test/static/media/log-in.f51423c2a02ce33d1768.png",
     "static/media/sign-up2.png": "/coach-connect-test/static/media/sign-up2.1e0f6c7e59d869639b22.png",
@@ -17,11 +17,11 @@
     "static/media/down-chevron-white.svg": "/coach-connect-test/static/media/down-chevron-white.98b577b5e3a25d5b1d6ac9f206c8bb87.svg",
     "index.html": "/coach-connect-test/index.html",
     "main.c42f78ee.css.map": "/coach-connect-test/static/css/main.c42f78ee.css.map",
-    "main.08508ff1.js.map": "/coach-connect-test/static/js/main.08508ff1.js.map",
+    "main.59614b18.js.map": "/coach-connect-test/static/js/main.59614b18.js.map",
     "787.aa89e278.chunk.js.map": "/coach-connect-test/static/js/787.aa89e278.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c42f78ee.css",
-    "static/js/main.08508ff1.js"
+    "static/js/main.59614b18.js"
   ]
 }
