@@ -8,7 +8,7 @@ import Login from './components/views/login';
 function App() {
 
   return (
-    <Router basename="/coach-connect-test">
+    <Router>
       <div>
         <Routes>
           <Route path="/" element={<Home />} /> 
