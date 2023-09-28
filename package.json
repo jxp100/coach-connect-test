@@ -1,6 +1,6 @@
 {
   "name": "coach-connect-test",
-  "homepage": "coachconnect.online",
+"homepage": "http://www.coachconnect.online",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
